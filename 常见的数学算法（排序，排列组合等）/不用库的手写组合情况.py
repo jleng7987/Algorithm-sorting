@@ -17,6 +17,7 @@ def subLists(lis=[],m=0,ans=[],allAns=[]):
         # 递归函数直接返回的条件之一：从4个数里面选5个数出来是不可能的。
         print("short list!")
         return
+
     length=len(lis)
     for iter in range(length-m+1):  #可以作为子列表一员的数在lis中的index
         ans[-m]=lis[iter]           #lis[iter]作为子列表倒数第m个数
